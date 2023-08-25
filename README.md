@@ -14,11 +14,17 @@ The model uses Yolov5m model developed by Ultralytics. Installation guide can be
 
 This section explains how you can train a yolov5 model. You can train by using the Ultralytics models or you can further train with the provided model. The provided model is already trained on roughly 1100 document images and can perform reasonably well. 
 
+### Data preparation
+
+First, you need to prepare your dataset. Our model uses 5 different classes: "typewritten", "handwritten", "signature", "table" and "image". If you decide to use Ultralytics models and train from "scratch", feel free to choose your own classes also outside of the scope provided here. 
+
+Then you need annotated data. This link (https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/) provides information about that. The yolo models use yolo annotation format.
+
+In addition to training data, you are going to need to create a yaml file, that describes where the training data is located and the classes used in training. You can find an example yaml find in this repository. 
+
 ### Training with Ultralytics models. 
 
-Ultralytics provides multiple models and you can find their specifications here: https://github.com/ultralytics/yolov5#pretrained-checkpoints. Once you have selected the desired, you need to prepare your dataset. Our model uses 5 different classes: "typewritten", "handwritten", "signature", "table" and "image". If you decide to use Ultralytics models and train from "scratch", feel free to choose your own classes also outside of the scope provided here. 
-
-Then you need annotated data. This link (https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/) provides information about that. In addition to training data, you are going to need to create a yaml file, that describes where the training data is located and the classes used in training. You can find an example yaml find in this repository. 
+Ultralytics provides multiple models and you can find their specifications here: https://github.com/ultralytics/yolov5#pretrained-checkpoints.
 
 Once you have your training data and your yaml file ready, you can start training. This can be done by following command.
 
