@@ -20,7 +20,7 @@ First, you need to prepare your dataset. Our model uses 5 different classes: "ty
 
 Then you need annotated data. This link (https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/) provides information about that. The yolo models use yolo annotation format.
 
-In addition to training data, you are going to need to create a yaml file, that describes where the training data is located and the classes used in training. You can find an example yaml find in this repository. 
+In addition to training data, you are going to need to create a yaml file, that describes where the training data is located and the classes used in training. You can find an example yaml found in this repository. 
 
 ### Training with Ultralytics models. 
 
