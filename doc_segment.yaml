@@ -6,8 +6,8 @@ test:  # test images (optional)
 
 # Classes 
 names:
-  0: 'typewritten'
-  1: 'handwritten'
-  2: 'signature'
-  3: 'image'
-  4: 'table'
+  0: 'kone' #type written
+  1: 'käsi' #handwritten
+  2: 'allekirjoitus' #signature
+  3: 'kuva' #image
+  4: 'taulukko' #table
