@@ -59,3 +59,21 @@ Ultralytics repository has a function for inference.
 If you are using our pretrained model, you could benefit from using and keyword argument called `--conf-thres`. This sets the confidence threshold. An optimal value for confidence threshold is 0.35. Below is and example of this.
 
 ```python detect.py --weights '/path/to/model/folder/model.pt' --source '/path/to/image/folder/' --conf-thres 0.35```
+
+
+### Note about language
+
+The model is trained to predict in Finnish language. In inference you can change the language of predictions in the following way:
+
+```
+#load model
+model = torch.hub.load('/path/to/yolov5/','custom', path='/path/to/model.pt',force_reload=True,source='local')
+
+# change names of the classes
+model.names = {0:'typewritten', 1:'handwritten', 2:'signature', 3:'image', 4:'table'}
+
+# predict
+results = model('/path/to/img.jpg')
+results.show()
+
+```
