@@ -1,4 +1,4 @@
-# segmentation
+# Document segmentation
 
 This repository contains a segmentation model for segmenting different part of a document. The model segments unified text parts and classifies them into typewritten and handwritten classes. In addition to this, the model segments tabular sections, pictures and signatures in a document. This model is most likely not production ready and might need some finetuning on your own data.  
 
