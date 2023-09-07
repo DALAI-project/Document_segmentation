@@ -1,6 +1,6 @@
 # Document segmentation
 
-<img src="https://github.com/DALAI-project/Document_segmentation/assets/51703308/de61cbc0-9125-47e0-81e8-9dd405ba4f35"  width="60%" height="60%">
+<img src="https://github.com/DALAI-project/Document_segmentation/assets/51703308/e8b0319d-8d2a-4e0f-bfd1-893f03ec4a6e"  width="60%" height="60%">
 
 This repository contains a segmentation model for segmenting different part of a document. The model segments unified text parts and classifies them into typewritten and handwritten classes. In addition to this, the model segments tabular sections, pictures and signatures in a document. This model is most likely not production ready and might need some finetuning on your own data.  
 
